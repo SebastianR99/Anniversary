@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="particles"></div>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html" class="active">Nosotros</a></li>
+          <li><a href="timeline.html">Línea de Tiempo</a></li>
+          <li><a href="recuerdos.html">Libro de Recuerdos</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="about">
+      <section>
+        <h2>Nuestra Historia</h2>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <h3>Cómo Empezó</h3>
+            <p>
+              Empezó de una manera muy extraña, simplemente me miraste muy mal en la Fuchi, cosa que me intrigó, me hizo pensar el porqué esa chica me mira de esa forma tan despectiva. Luego, decidí responderle una historia y me di cuenta que no era tan mala como pensaba, y que en realidad era una chica increíble. Comimos hamburguesa y miré cómo se te caía al comértela y me pareció encantador. Desde ese momento, supe que habría algo especial entre nosotros. Pasó el tiempo, salidas, ignoradas, hasta que un día tuvimos un altercado que nos hizo distanciarnos. Agradezco que no me hayas dejado ir, porque eso me hizo darme cuenta de lo que realmente sentía por ti. Te extrañaba y no quería perderte.
+            </p>
+          </div>
+          <div class="timeline-entry">
+            <h3>El Presente</h3>
+            <p>
+              Hoy somos mejores juntos. Nos apoyamos, reímos y crecemos como uno solo. Es increíble ver cómo hemos superado obstáculos y hemos creado recuerdos inolvidables. Desde nuestras aventuras hasta los momentos tranquilos, cada día a tu lado es un regalo qua atesoro con el alma. Te has convertido en mi mejor amiga, mi confidente y el amor de mi vida. Cada día me enamoro más de ti y no puedo esperar a ver qué nos depara el futuro.
+            </p>
+          </div>
+          <div class="timeline-entry">
+            <h3>El Futuro</h3>
+            <p>Planes, sueños, y promesas. Lo mejor aún está por venir.</p>
+          </div>
+        </div>
+      </section>
+      <audio
+        id="audio-player-index"
+        controls
+        autoplay
+        loop
+        style="visibility: hidden"
+      >
+        <source src="audio/Paisaje.mp3" type="audio/mp3" />
+        Tu navegador no soporta la etiqueta de audio.
+      </audio>
+      <script>
+        // Obtener el reproductor de audio
+        const audioPlayer = document.getElementById("audio-player-index");
+
+        // Establecer el volumen al 50% (0.5)
+        audioPlayer.volume = 0.25;
+      </script>
+    </main>
+  </body>
+</html>

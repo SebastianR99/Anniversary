@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz de la Relación - Nuestro Aniversario</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="particles"></div>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="timeline.html">Línea de Tiempo</a></li>
+          <li><a href="recuerdos.html">Libro de Recuerdos</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="trivia fade-in">
+      <h1>Quiz de la Relación 💖</h1>
+      <p>¡Demuestra cuánto sabes sobre nuestra historia juntos!</p>
+
+      <div class="question">
+        <h2>¿Cuál fue nuestro primer viaje juntos?</h2>
+        <div class="answers">
+          <button class="answer-btn" data-correct="false">Chachagüí</button>
+          <button class="answer-btn" data-correct="true">La Cocha</button>
+          <button class="answer-btn" data-correct="false">Buesaco</button>
+          <button class="answer-btn" data-correct="false">La Florida</button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <h2>¿Quién dijo 'Te amo' primero?</h2>
+        <div class="answers">
+          <button class="answer-btn" data-correct="true">Yo</button>
+          <button class="answer-btn" data-correct="false">Tú</button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <h2>¿En qué fecha salimos por primera vez?</h2>
+        <div class="answers">
+          <button class="answer-btn" data-correct="true">26 de abril de 2022</button>
+          <button class="answer-btn" data-correct="false">20 de enero de 2022</button>
+          <button class="answer-btn" data-correct="false">15 de marzo de 2022</button>
+          <button class="answer-btn" data-correct="false">30 de abril de 2022</button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <h2>¿Quién pidió que fueramos novios?</h2>
+        <div class="answers">
+          <button class="answer-btn" data-correct="true">Yo</button>
+          <button class="answer-btn" data-correct="false">Tú</button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <h2>¿Qué canción te dediqué primero?</h2>
+        <div class="answers">
+          <button class="answer-btn" data-correct="false">
+            La Espera - Cultura Profética
+          </button>
+          <button class="answer-btn" data-correct="true">
+            Por el Resto de mi Vida - Andrés Cepeda
+          </button>
+          <button class="answer-btn" data-correct="false">
+            Ángel - Elefante
+          </button>
+          <button class="answer-btn" data-correct="false">
+            Mariposas - Enanitos Verdes
+          </button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <h2>¿Quién tuvo la idea de dormir en llamada primero?</h2>
+        <div class="answers">
+          <button class="answer-btn" data-correct="true">Yo</button>
+          <button class="answer-btn" data-correct="false">Tú</button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <h2>¿Quién es más sopas?</h2>
+        <div class="answers">
+          <button class="answer-btn" data-correct="false">Yo</button>
+          <button class="answer-btn" data-correct="true">Tú</button>
+        </div>
+        <div class="feedback"></div>
+      </div>
+
+      <div class="result">
+        <h3>¡Gracias por jugar! ¿Cuántas respuestas acertaste?</h3>
+        <p id="score">0</p>
+        <button id="retry-btn">Volver a jugar</button>
+      </div>
+      <audio
+        id="audio-player-index"
+        controls
+        autoplay
+        loop
+        style="visibility: hidden"
+      >
+        <source src="audio/Lobo Domesticado.mp3" type="audio/mp3" />
+        Tu navegador no soporta la etiqueta de audio.
+      </audio>
+      <script>
+        // Obtener el reproductor de audio
+        const audioPlayer = document.getElementById("audio-player-index");
+
+        // Establecer el volumen al 50% (0.5)
+        audioPlayer.volume = 0.25;
+      </script>
+    </main>
+  </body>
+</html>
