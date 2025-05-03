@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.disabled = true;
       e.target.style.backgroundColor = "#cccccc";
 
-      if (total == 12) {
+      if (total >= 12) {
         scoreElement.textContent = `${score} de 12`; 
         resultSection.style.display = "block"; 
         resultSection.style.display = "block"; 
